@@ -1,0 +1,16 @@
+export default {
+  HOME: '/',
+  SKILLS: '/skills',
+  WEBDEVELOPMENT: '/web-development',
+  SOCIALMEDIA: '/web-development/social-media',
+  FLASHPRODUCTIES: '/web-development/flash-producties',
+  MEDIAPRODUCTIES: '/media-producties',
+  THEMAKINGOFMEDIA: '/media-producties/the-making-of-media',
+  THEGUIDE: '/media-producties/the-guide',
+  LOWLANDSTV: '/media-producties/lowlands-tv',
+  RADIO3FM: '/media-producties/radio3fm',
+  DOCUMENTAIRE: '/media-producties/documentaire',
+  WERKERVARING: '/werkervaring',
+  STUDIES: '/studie',
+  CONTACT: '/contact',
+};

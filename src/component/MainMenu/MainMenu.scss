@@ -1,0 +1,90 @@
+/* stylelint-disable-next-line block-no-empty */
+:local {
+
+  .menu {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+
+    @media screen and (min-width: 768px) and (min-height: 500px) {
+      top: 20px;
+      width: 470px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5000;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 13px;
+      padding: 0 12px;
+
+      .sub {
+        display: none;
+      }
+    }
+
+    a {
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 auto 4px;
+
+      @media screen and (min-width: 768px) and (min-height: 500px) {
+        margin: 0;
+        opacity: 0.4;
+        border-radius: 0;
+        text-decoration: none;
+        line-height: 24px;
+
+        span {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      span {
+        padding: 0 10px;
+        text-shadow: none;
+        display: none;
+
+        @media screen and (min-width: 768px) and (min-height: 500px) {
+          display: inline-block;
+        }
+      }
+
+      &:hover,
+      &:active {
+        > div {
+          background-position: 0 -240px;
+          opacity: 1;
+        }
+
+        span {
+          font-style: italic;
+          color: #e57d43;
+        }
+      }
+
+      &:hover {
+        transition: all 200ms ease-out;
+        opacity: 1;
+
+        @media screen and (min-width: 768px) and (min-height: 500px) {
+          background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) !important;
+        }
+      }
+    }
+
+    .circle {
+      text-align: right;
+      width: 21px;
+      height: 21px;
+      background: url('asset/image/sprite.png') -21px -240px no-repeat transparent;
+      float: right;
+      margin: 1px 0 0;
+
+      @media screen and (min-width: 768px) and (min-height: 500px) {
+        display: none;
+      }
+    }
+  }
+}

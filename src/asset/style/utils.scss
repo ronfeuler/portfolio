@@ -1,0 +1,62 @@
+@import '~seng-scss';
+
+.router-link-exact-active {
+	transition: all 200ms ease-out !important;
+	opacity: 1 !important;
+
+  @media screen and (min-width: 768px) and (min-height: 500px) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) !important;
+  }
+
+	span {
+		opacity: 1 !important;
+		transition: all 200ms ease-out !important;
+    color: #e57d43 !important;
+	}
+	> div {
+		background-position: 0 -240px !important;
+		opacity: 1 !important;
+	}
+}
+
+a.next,
+a.prev {
+	width: 42px;
+	height: 42px;
+	background: transparent;
+	border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	margin: 32px 12px 0 0;
+	transition-duration: 250ms;
+  border: 1px solid rgba(#e57d43, 0.5);
+
+	span {
+		display: block;
+		text-decoration: none;
+		text-shadow: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 24px !important;
+		line-height: 1;
+		font-weight: bold;
+		color: #e57d43;
+		transition-duration: 250ms;
+		height: 28px;
+		font-style: normal;
+	}
+
+	&:hover {
+		background: #e57d43;
+
+		span {
+			color: #333;
+		}
+	}
+
+  @media screen and (min-width: 768px) and (min-height: 500px) {
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
